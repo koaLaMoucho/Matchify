@@ -1,0 +1,20 @@
+on: pull_request
+
+jobs:
+  test:
+    name: 'Test'
+    runs-on: self-hosted
+    defaults:
+      run:
+        working-directory: ./app
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '11.x'
+      - uses: subosito/flutter-action@v1
+        with:
+          flutter-version: '3.3.2'
+
+      - run: flutter pub get
+      - run: flutter test --coverage
