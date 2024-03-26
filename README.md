@@ -20,10 +20,6 @@ You can find here details about the product (or mini-app or module), from a high
 * [Acceptance tests](app/test_driver)
 * [Project management](docs/ProjectManagement.md)
 
-So far, contributions are exclusively made by the initial team, but we hope to open them to the community, in all areas and topics: requirements, technologies, development, experimentation, testing, etc.
-
-Please contact us! 
-
 Thank you!
 
 | Name            | Number    |
